@@ -1,0 +1,45 @@
+Votting application 
+What ?
+a Functionality where user can give vote to the given set of candidates
+
+Models 
+Routes
+
+Voting Functionality
+1.User sign in/sign Up
+2.see the candidates list
+3.vote one of the candidates
+4.there is a route which shows the list of candidates and their live vote counts sorted by their vote count.
+5. user must contain unique id card like adharnumber
+6.there should be one admin who ca only maintain the table of candidates but ye  vote nhi de skta hai
+7.user can change their passowrd
+8.user can login with password and adhar number.
+
+
+Routes
+user Authication
+/signup Post -Create a new user account
+/Login Post- Log in to an existing account
+
+Voting
+/candidates Get-get the list of candidates
+/vote/:candidateId-Post - vote specific candidates
+
+Vote Counts:
+/vote/counts-Get-Get the ist of candidates sorted by their by vote count
+
+
+User Profile:
+/profile: Get the user Profile information
+/profile/passowrd: Put change the user password.
+
+Admin candidates
+/candidates:Post-Create a new candidateId
+/candidates/candidateId: Put- update existing candidateId
+/candidates/candidateId: Delete- update existing candidateId
+
+
+Create User
+   |
+    |/signup
+    user
